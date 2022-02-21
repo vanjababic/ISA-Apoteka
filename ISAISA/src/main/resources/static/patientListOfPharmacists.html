@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Farmaceuti</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/patientListOfPharmacists.js"></script>
+</head>
+<body>
+    <div class="pharmacistsAdminPharmacy">
+        <input type="search" class="searchPharmacistsAdminPharmacy" name="q" placeholder="Unesite ime i prezime farmaceuta"/>
+        <input type="submit" class="btnSearchPharmacistsAdminPharmacy"/>
+        <button class="btnFilterPharmacistAdminPharmacy">Filter</button>
+        <div class="pharmacistsShowAdminPharmacy">
+
+            <table id="tablePharmacistsAdminPharmacy">
+                <h1>Farmaceuti</h1>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Ocena</th>
+                    <th>Apoteka</th>
+                    <th>Adresa apoteke</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="pharmacistsSearchAdminPharmacy">
+            <input type="search" class="searchPharmacistsAdminPharmacy" name="q" placeholder="Unesite ime i prezime farmaceuta"/>
+            <input type="submit" class="btnSearchPharmacistsAdminPharmacy"/>
+            <button class="btnFilterPharmacistAdminPharmacy">Filter</button>
+            <table id="tablePharmacistsSearchAdminPharmacy">
+                <h1>Rezulati za: </h1><h1 id="searchPharmacists"></h1>
+                <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Ocena</th>
+                    <th>Apoteka</th>
+                    <th>Adresa apoteke</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pharmacistsFilterAdminPharmacy">
+            <label for="ratingOver">Ocena iznad:</label>
+            <input id="ratingOver"  min="1" max="5" type="number"/>
+            <label for="ratingUnder">Ocena ispod:</label>
+            <input id="ratingUnder" type="number" min="1" max="5"/>
+            <label for="pharmacyName">Apoteka:</label>
+            <select id="pharmacyName" name="pharmacyName">
+                <option disabled selected value> -- odaberite apoteku -- </option>
+            </select>
+
+            <button id="btnSubmitFilterPharmacists">Ok</button>
+            <button id="btnCancelFilterPharmacists">Ponisti</button>
+        </div>
+
+    </div>
+</body>
+</html>

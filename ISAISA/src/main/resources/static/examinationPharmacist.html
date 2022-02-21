@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Savetovanje</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/examinationPharmacist.js"></script>
+</head>
+<body>
+
+    <div class="examination">
+        <button id="btnReport">Napisi izvestaj</button>
+        <button id="btnPrescript">Prepisi lek</button>
+        <button id="btnNewAppointment">Zakazi novi termin</button>
+        <button id="btnExaminationDone">Zavrsi pregled</button>
+    </div>
+
+    <div class="writeReport" >
+        <h2>Izvestaj: </h2><input id="chReport" type="text"/>
+        <button id="btnSubmitReport">Predaj</button>
+    </div>
+
+    <div class="prescriptMedication" >
+        <h2>Proveri dostupnost leka</h2>
+        <h3>Prikazani su lekovi na koje pacijent nije alergican</h3>
+        <label>Izaberite lek:</label>
+        <!--<table id="tableMeds">
+            <thead>
+            <tr></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>-->
+        <select name="dropDown" id="idDropDown">
+            <option> </option>
+            <option></option>
+        </select>
+    </div>
+
+
+    <div class="medInPharmacy">
+        <table id="tableMedInPharmacy">
+            <thead>
+            <tr><h3>Lek je dostupan.</h3></tr>
+            <h3>Trajanje terapije: </h3><input id="chTherapyDuration" type="text"/>
+            <br>
+            <tr><button id="btnPrescriptMedication">Prepisi lek</button></tr>
+            <tr><button id="btnCanclePrescription">Odustani</button></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <!--<h3>Trajanje terapije: </h3><input id="chTherapyDuration" type="text"/>-->
+    </div>
+
+    <div class="medNotInPharmacy">
+        <table id="tableMedNotInPharmacy">
+            <thead>
+            <tr><h3>Lek je nedostupan. Administrator apoteke je obavesten.</h3></tr>
+            <tr><button id='btnCancle'>Odustani od preporucivanja leka</button></tr>
+            <tr><button id='btnAlternative'>Preporuci dostupnu alternativu</button></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="alternativeMedication" >
+        <h2>Izaberite alternativu</h2>
+        <h4>Nakon sto odaberete lek iz liste on ce automatski biti prepisan. Prvo popunite polje trajanje terapije</h4>
+        <h3>Trajanje terapije u danima: </h3><input id="chTherapyDurationAlternative" type="text"/>
+        <br>
+        <label>Izaberite lek:</label>
+        <select name="alternativeDropDown" id="idAlternativeDropDown"></select>
+        <tr><button id='btnCancleAlternative'>Odustani od preporucivanja leka</button></tr>
+    </div>
+
+    <div class="ScheduleCounseling">
+        <button id='btnCreateCounseling'>Izaberi datum i vreme novog termina</button>
+        <button id='btnCancleScheduling'>Odustani od zakazivanja</button>
+    </div>
+
+    <div class="createCounseling">
+        <h4>Izvrsice se provera da li su farmaceut i pacijent u ovom periodu slobodni.</h4>
+
+
+        <h2>Pocetak savetovanja: </h2>
+        <input type="datetime-local" id="chStartOfCounseling">
+        <br>
+        <h2>Kraj savetovanja: </h2>
+        <input type="datetime-local" id="chEndOfCounseling">
+
+        <br>
+        <!--<h2>Cena: </h2><input id="chPrice" type="text"/>-->
+
+        <button id="btnCreateCounselingNow">Zakazi</button>
+        <button id='btnCancleCreatingCounseling'>Odustani od zakazivanja</button>
+
+    </div>
+
+
+
+</body>
+</html>

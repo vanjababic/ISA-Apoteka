@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Profil</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/patientProfile.js"></script>
+</head>
+<body>
+<div class="profileAdminPharmacy">
+    <div>
+        <h1 id="firstName"></h1> <h1 id="lastName"></h1>
+        <h2 id="email"></h2>
+        <h2 id="address"></h2>
+        <h2 id="phone"></h2>
+        <h2 id="city"></h2>
+        <h2 id="country"></h2>
+        <h2 id="pharmacy"></h2>
+    </div>
+    <button id="btnChangeProfilePatient">Izmeni profil</button>
+    <button id="btnChangePasswordPatient">Promeni lozinku</button>
+</div>
+
+    <div class="changeProfilePatient">
+    <div>
+        <h1>Ime: </h1><input id="chFirstName" type="text"/>
+        <h1>Prezime: </h1><input id="chLastName" type="text"/>
+        <h2>Adresa: </h2><input id="chAddress" type="text"/>
+        <h2>Telefon: </h2><input id="chPhone" type="text"/>
+        <h2>Grad: </h2><input id="chCity" type="text"/>
+        <h2>Drzava: </h2><input id="chCountry" type="text"/>
+    </div>
+
+        <button id="btnSaveProfilePatient">Sacuvaj izmene</button>
+        <button id="btnCancelChanges">Ponisti</button>
+    </div>
+
+
+    <div class="alergiePatient">
+        <div>
+            <h1> Lek na koji sam alergican:</h1><input id="allergiemedication" type="text"/>
+        </div>
+        <button id="btnSaveAlergie">posalji lek na koji si alergican</button>
+    </div>
+
+<div class="changePasswordPatient">
+    <div>
+        <h2>Trenutna lozinka: </h2><input id="oldPassword" type="text"/>
+        <h2>Nova lozinka: </h2><input id="chPassword" type="text"/>
+        <h2>Potvrdite novu lozinku: </h2><input id="repeatPassword" type="text"/>
+    </div>
+
+    <button id="btnSavePasswordPatient">Sacuvaj izmene</button>
+    <button id="btnCancelPassword">Ponisti</button>
+</div>
+
+<div class="passwordChangeSuccess">
+    <h2>Lozinka uspesno promenjena!</h2>
+    <button><a href="login.html">Ok</a></button>
+</div>
+
+<div class="passwordChangeError">
+    <h2>Lozinka nije uspesno promenjena!</h2>
+    <button>Pokusaj opet</button>
+    <button>Vrati se nazad</button>
+</div>
+</body>
+</html>

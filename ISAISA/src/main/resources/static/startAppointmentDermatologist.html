@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zapocni pregled</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/startAppointmentDermatologist.js"></script>
+</head>
+<body>
+
+    <div class="unesiPretragu">
+        <h5>Pronadji pacijenta i zapocni pregled</h5>
+        <input type="search" id="patientSearch" name="q" placeholder="Unesite ime i prezime pacijenta"/>
+        <input type="submit" id="btnSearchPatient"/>
+    </div>
+
+    <div class="patientsShowAll">
+        <table id="tablePatientsShow">
+            <h1>Pacijenti</h1>
+            <tr>
+                <th>Id</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Adresa</th>
+                <th>Grad</th>
+                <th>Drzava</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="patientsShowSearch">
+        <h3>Proveri da li pacijent ima termin.</h3>
+        <table id="tablepatientsShowSearch">
+            <h1>Rezulati za: </h1><h1 id="searchPatient"></h1>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Adresa</th>
+                <th>Grad</th>
+                <th>Drzava</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="appointmentStart">
+        <table id="tableAppointmentExists">
+            <thead>
+            <tr>
+                <th> </th>
+                <th> </th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="appoinmtentDoesNotExist">
+        <h1>Pregled ne postoji!</h1>
+        <button><a href="welcomeDermatologist.html">Vrati se nazad</a></button>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Kreiraj narudzbenicu</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminPharmacyCreateOrder.js"></script>
+</head>
+<body>
+
+    <div class="ordersShow">
+        <h1>Lekovi</h1>
+        <button class="selectMedicineForOrder">Odaberi lekove za porucivanje</button>
+        <table id="tableOrderMedicineShow">
+            <thead>
+                <tr>
+                    <th>Naziv leka</th>
+                    <th>Sifra leka</th>
+                    <th>Proizvodjac</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="submitOrder">
+        <label for="dateDeadline">Rok isporuke</label>
+        <input type="date" id="dateDeadline"/>
+        <button id="btnSubmitOrder">Poruci</button>
+        <button id="btnCancelOrder">Ponisti</button>
+    </div>
+
+    <div class="errorOrder">
+        <h1 id="errorOrder"></h1>
+        <button id="btnErrorOrder">Ok</button>
+    </div>
+
+</body>
+</html>

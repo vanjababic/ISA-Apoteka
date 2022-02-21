@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Godisnji odmori</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminsVacations.js"></script>
+</head>
+<body>
+    <div class="vacationRequestsShow">
+        <table id="tableVacationRequests">
+            <h1>Zahtevi za godisnjim odmorima</h1>
+            <tr>
+                <th>Id zaposlenog</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Datum pocetka godisnjeg odmora</th>
+                <th>Datum zavrsetka godisnjeg odmora</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="approveVacation">
+        <div class="successfulApproveVacation">
+            <h1>Uspesno odobren zahtev za godisnjim odmorom!</h1>
+            <button class="returnToVacations">Ok</button>
+        </div>
+
+        <div class="unsuccessfulApproveVacation">
+            <h1 id="unsuccessfulApproveVacation"></h1>
+            <button class="returnToVacations">Ok</button>
+        </div>
+    </div>
+
+
+    <div class="denyVacation">
+        <div class="formDenyVacation">
+            <label for="reasonDenial">Razlog za odbijanje</label>
+            <textarea id="reasonDenial" name="reasonDenial"></textarea>
+            <button id="btnSubmitDenial">Ok</button>
+            <button id="btnCancelDenial">Ponisti</button>
+        </div>
+
+        <div class="successfulDenyVacation">
+            <h1>Uspesno odbijen zahtev za godisnjim odmorom!</h1>
+            <button class="returnToVacations">Ok</button>
+        </div>
+
+        <div class="unsuccessfulDenyVacation">
+            <h1 id="unsuccessfulDenyVacation"></h1>
+            <button class="returnToVacations">Ok</button>
+        </div>
+    </div>
+</body>
+</html>

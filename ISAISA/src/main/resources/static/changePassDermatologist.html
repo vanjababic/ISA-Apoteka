@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/changePassDermatologist.js"></script>
+</head>
+<body>
+
+    <div class="insertPasswordDermatologist">
+        <h2>Trenutna lozinka: </h2><input id="oldPassword" type="text"/>
+        <br>
+        <h2>Nova lozinka: </h2><input id="chPassword" type="text"/>
+        <br>
+        <h2>Potvrdite novu lozinku: </h2><input id="repeatPassword" type="text"/>
+        <br>
+        <button id="btnSavePasswordDermatologist">Sacuvaj izmene</button>
+    </div>
+
+    <div class="passwordChangeSuccess" hidden>
+        <h2>Lozinka uspesno promenjena!</h2>
+        <button><a href="login.html">Ok</a></button>
+    </div>
+
+    <div class="passwordChangeError" hidden>
+        <h2>Lozinka nije uspesno promenjena!</h2>
+        <button><a href="login.html">Vrati se nazad</a></button>
+    </div>
+</body>
+</html>

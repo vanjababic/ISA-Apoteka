@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lekovi</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminPharmacyMedicine.js"></script>
+    <style>
+        #modalDelete {display: none;}
+    </style>
+</head>
+<body>
+    <div class="medicineAdminPharmacy">
+        <input type="search" class="searchMedicineAdminPharmacy" name="q" placeholder="Unesite naziv leka"/>
+        <input type="submit" class="btnSearchMedicineAdminPharmacy"/>
+        <button class="btnAddMedicineAdminPharmacy">Dodaj lek</button>
+    </div>
+
+    <div class="medicineShowAdminPharmacy">
+        <table id="tableMedicineAdminPharmacy">
+            <h1>Lekovi</h1>
+            <tr>
+                <th>Sifra</th>
+                <th>Naziv</th>
+                <th>Proizvodjac</th>
+                <th>Kolicina</th>
+                <th>Cena</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="medicineSearchAdminPharmacy">
+
+        <table id="tableMedicineSearchAdminPharmacy">
+            <h1>Rezulati za: </h1><h1 id="searchMedicine"></h1>
+            <thead>
+            <tr>
+                <th>Sifra</th>
+                <th>Naziv</th>
+                <th>Proizvodjac</th>
+                <th>Kolicina</th>
+                <th>Cena</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="addNewMedicineAdminPharmacy">
+        <form id="addMedicineForm">
+            <label for="medicineName">Lek:</label>
+            <select id="medicineName" name="medicineName">
+                <option disabled selected value> -- odaberite lek -- </option>
+            </select>
+            <label for="price">Cena:</label>
+            <input id="price" type="number"/>
+
+            <label for="beginPriceValidity">Pocetak perioda vazenja cene:</label>
+            <input id="beginPriceValidity" type="date">
+            <label for="endPriceValidity">Kraj perioda vazenja cene:</label>
+            <input id="endPriceValidity" type="date">
+
+            <input type="button" value="Submit" id="btnAddSaveMedicineAdminPharmacy">
+        </form>
+    </div>
+
+    <div class="successAddMedicine">
+        <h2>Uspesno dodat lek!</h2>
+        <button id="returnToMedicine">Vrati se na prethodnu stranu</button>
+    </div>
+
+    <div class="errorAddMedicine">
+        <h2 id="errorAddMeds"></h2>
+        <button id="errorAddMedicine">Vrati se na prethodnu stranu</button>
+    </div>
+
+    <div id="modalDelete">
+        <h1>Da li ste sigurni da zelite da obrisete lek?</h1>
+        <button id="btnModalYes">Da</button>
+        <button id="btnModalNo">Ne</button>
+    </div>
+    <div class="errorDeleteMedicine">
+        <h1 id="errorDeleteMedicine"></h1>
+        <button id="btnErrorDeleteMedicine">Ok</button>
+    </div>
+
+    <div class="changeMedicine">
+        <label for="quantityMedicine">Kolicina</label>
+        <input type="number" id="quantityMedicine">
+        <button id="btnChangeMedicine">Ok</button>
+        <button id="btnCancelChangeMedicine">Ponisti</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Slobodni termini</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminPharmacyAvailableAppointments.js"></script>
+</head>
+<body>
+    <div class="dermatologistsShowAdminPharmacy">
+
+        <table id="tableDermatologistsAdminPharmacy">
+            <h1>Dermatolozi</h1>
+            <tr>
+                <th>Id</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="availableAppointments">
+        <div class = chooseDateAvailableAppointments>
+            <h2 id="dermatologistName"></h2>
+            <h2 id="workingHoursDermatologist"></h2>
+
+            <label for="dateBegin">Datum i vreme pocetka termina</label>
+            <input type="datetime-local" id="dateBegin">
+            <label for="duration">Trajanje termina u minutima</label>
+            <input type="number" id="duration" min="1">
+            <label for="price">Cena termina</label>
+            <input type="number" id="price" min="1">
+
+            <button id="btnSubmitNewAvailableAppointment">Zakazi termin</button>
+            <button id="btnCancelNewAvailableAppointment">Ponisti</button>
+        </div>
+        <div class="successfulAppointmentCreation">
+            <h2>Termin uspesno kreiran!</h2>
+            <button id="btnReturnToChoosing">Ok</button>
+        </div>
+        <div class="unsuccessfulAppointmentCreation">
+            <h2 id="responseMessageAppointmentCreation"></h2>
+            <button id="btnReturnToChoosing1">Ok</button>
+        </div>
+    </div>
+
+
+</body>
+</html>

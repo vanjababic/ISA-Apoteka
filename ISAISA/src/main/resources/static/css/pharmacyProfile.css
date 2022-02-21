@@ -1,0 +1,42 @@
+.card {
+    width: 600px;
+    display: inline;
+}
+
+.bio {
+    float: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    float: right;
+}
+
+.buttons button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.buttons button:hover {
+    background-color: #3e8e41;
+}
+
+ul {
+    margin: 1em 0 1em;
+}
+
+li {
+    margin: 0 1em 2em;
+}
+
+button {
+    width:150px;
+    height: 35px;
+}

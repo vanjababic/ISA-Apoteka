@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dermatolozi</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/patientListOfDermatologists.js"></script>
+</head>
+<body>
+    <div class="dermatologistsAdminPharmacy">
+        <input type="search" class="searchDermatologistsAdminPharmacy" name="q" placeholder="Unesite ime i prezime dermatologa"/>
+        <input type="submit" class="btnSearchDermatologistsAdminPharmacy"/>
+        <button class="btnAddDermatologistsAdminPharmacy">Dodaj dermatologa</button>
+        <button class="btnFilterDermatologistsAdminPharmacy">Filter</button>
+    </div>
+
+    <div class="dermatologistsShowAdminPharmacy">
+        <table id="tableDermatologistsAdminPharmacy">
+            <h1>Dermatolozi</h1>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Ocena</th>
+                <th>Apoteke</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="dermatologistsSearchAdminPharmacy">
+
+        <table id="tableDermatologistsSearchAdminPharmacy">
+            <h1>Rezulati za: </h1><h1 id="searchDermatologists"></h1>
+            <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Ocena</th>
+                <th>Apoteke</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="dermatologistsFilterAdminPharmacy">
+        <label for="ratingOver">Ocena iznad:</label>
+        <input id="ratingOver"  min="1" max="5" type="number" value="1" step="0.01"/>
+        <label for="ratingUnder">Ocena ispod:</label>
+        <input id="ratingUnder" type="number" min="1" max="5" value="5" step="0.01"/>
+        <label for="pharmacyName">Apoteka:</label>
+        <select id="pharmacyName" name="pharmacyName">
+            <option disabled selected value> -- odaberite apoteku -- </option>
+        </select>
+
+        <button id="btnSubmitFilterDermatologists">Ok</button>
+        <button id="btnCancelFilterDermatologists">Ponisti</button>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/supplierProfile.js"></script>
+</head>
+<body>
+<div class="profileSupplier">
+    <div>
+        <h1 id="firstName"></h1> <h1 id="lastName"></h1>
+        <h2 id="address"></h2>
+        <h2 id="phone"></h2>
+        <h2 id="city"></h2>
+        <h2 id="country"></h2>
+    </div>
+    <button id="btnChangeProfileSupplier">Izmeni profil</button>
+    <button id="btnChangePasswordSupplier">Promeni lozinku</button>
+</div>
+
+<div class="changeProfileSupplier">
+    <div>
+        <h2>Ime: </h2><input id="chFirstName" type="text"/>
+        <h2>Prezime: </h2><input id="chLastName" type="text"/>
+        <h2>Adresa: </h2><input id="chAddress" type="text"/>
+        <h2>Telefon: </h2><input id="chPhone" type="text"/>
+        <h2>Grad: </h2><input id="chCity" type="text"/>
+        <h2>Drzava: </h2><input id="chCountry" type="text"/>
+    </div>
+
+    <button id="btnSaveProfileSupplier">Sacuvaj izmene</button>
+    <button id="btnCancelChanges">Ponisti</button>
+</div>
+
+<div class="changePasswordSupplier">
+    <div>
+        <h2>Trenutna lozinka: </h2><input id="oldPassword" type="text"/>
+        <h2>Nova lozinka: </h2><input id="chPassword" type="text"/>
+        <h2>Potvrdite novu lozinku: </h2><input id="repeatPassword" type="text"/>
+    </div>
+
+    <button id="btnSavePasswordSupplier">Sacuvaj izmene</button>
+    <button id="btnCancelPassword">Ponisti</button>
+</div>
+
+<div class="passwordChangeSuccess">
+    <h2>Lozinka uspesno promenjena!</h2>
+    <button><a href="login.html">Ok</a></button>
+</div>
+
+<div class="passwordChangeError">
+    <h2>Lozinka nije uspesno promenjena!</h2>
+    <button>Pokusaj opet</button>
+    <button>Vrati se nazad</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rezervacije</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pharmacies.js"></script>
+    <script src="js/giveMedicationPharmacist.js"></script>
+</head>
+<body>
+
+    <div class="insertNumber">
+        <h2>Broj rezervacije: </h2><input id="chReservation" type="text"/>
+        <br>
+        <button id="btnSubmitReservation">Proveri</button>
+        <br>
+        <button id="btnBack">Vrati se nazad</button>
+    </div>
+
+    <div class="reservationExists">
+        <h2>Rezervacija postoji.</h2>
+        <br>
+        <button id="btnGiveReservation">Izdaj lek</button>
+        <button id="btnBackk">Odustani od izdavanja leka</button>
+    </div>
+
+    <div class="reservationDoesNotExists">
+        <h2>Rezervacija ne postoji.</h2>
+        <button id="btnBackkk">Kraj</button>
+    </div>
+</body>
+</html>

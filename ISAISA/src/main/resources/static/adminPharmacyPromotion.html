@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Akcije i promocije</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminPharmacyPromotion.js"></script>
+</head>
+<body>
+    <div class="createPromotion">
+        <label for="descriptionOfPromotion">Opis promocije: </label>
+        <textarea id="descriptionOfPromotion" name="descriptionOfPromotion"></textarea>
+
+        <label for="validFrom">Pocetak vazenja promocije</label>
+        <input type="date" id="validFrom"/>
+        <label for="validUntil">Zavrsetak vazenja promocije</label>
+        <input type="date" id="validUntil"/>
+
+        <button id="btnSubmitCreatePromotion">Ok</button>
+    </div>
+
+    <div class="successfulPromotion">
+        <h1>Uspesno kreirana promocija!</h1>
+        <button id="btnSuccessfulCreatePromotion">Ok</button>
+    </div>
+
+    <div class="unsuccessfulPromotion">
+        <h1 id="unsuccessfulPromotion"></h1>
+        <button id="btnUnsuccessfulCreatePromotion">Ok</button>
+    </div>
+    <div class="returnPromotion">
+        <h1>Nepravilan unos!</h1>
+        <button><a href="adminPharmacyPromotion.html">Ok</a></button>
+    </div>
+</body>
+</html>

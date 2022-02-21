@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pregled</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/examinationDermatologist.js"></script>
+</head>
+<body>
+
+   <!-- <div class="examination">
+        <h2>Izvestaj: </h2><input id="chReport" type="text"/>
+        <hr>
+        <h2>Prepisi lek</h2>
+        <h3>Id leka: </h3><input id="chPrescriptMedication" type="text"/>
+        <h3>Trajanje terapije: </h3><input id="chTherapyDuration" type="text"/>
+
+    </div>-->
+    <div class="examination">
+        <button id="btnReport">Napisi izvestaj</button>
+        <button id="btnPrescript">Prepisi lek</button>
+        <button id="btnNewAppointment">Zakazi novi termin</button>
+        <button id="btnExaminationDone">Zavrsi pregled</button>
+
+    </div>
+
+   <div class="writeReport" >
+       <h2>Izvestaj: </h2><input id="chReport" type="text"/>
+       <button id="btnSubmitReport">Predaj</button>
+   </div>
+
+   <div class="prescriptMedication" >
+       <h2>Proveri dostupnost leka</h2>
+       <h3>Prikazani su lekovi na koje pacijent nije alergican</h3>
+       <label>Izaberite lek:</label>
+       <!--<table id="tableMeds">
+           <thead>
+           <tr></tr>
+           </thead>
+           <tbody>
+
+           </tbody>
+       </table>-->
+       <select name="dropDown" id="idDropDown">
+           <option> </option>
+           <option></option>
+       </select>
+   </div>
+
+    <div class="scheduleNewAppointment" >
+
+    </div>
+
+    <div class="medInPharmacy">
+        <table id="tableMedInPharmacy">
+            <thead>
+            <tr><h3>Lek je dostupan.</h3></tr>
+            <h3>Trajanje terapije: </h3><input id="chTherapyDuration" type="text"/>
+            <br>
+            <tr><button id="btnPrescriptMedication">Prepisi lek</button></tr>
+            <tr><button id="btnCanclePrescription">Odustani</button></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <!--<h3>Trajanje terapije: </h3><input id="chTherapyDuration" type="text"/>-->
+    </div>
+
+   <div class="medNotInPharmacy">
+       <table id="tableMedNotInPharmacy">
+           <thead>
+           <tr><h3>Lek je nedostupan. Administrator apoteke je obavesten.</h3></tr>
+           <tr><button id='btnCancle'>Odustani od preporucivanja leka</button></tr>
+           <tr><button id='btnAlternative'>Preporuci dostupnu alternativu</button></tr>
+           </thead>
+           <tbody>
+
+           </tbody>
+       </table>
+   </div>
+
+   <div class="alternativeMedication" >
+       <h2>Izaberite alternativu</h2>
+       <h4>Nakon sto odaberete lek iz liste on ce automatski biti prepisan. Prvo popunite polje trajanje terapije</h4>
+
+       <h3>Trajanje terapije u danima: </h3><input id="chTherapyDurationAlternative" type="text"/>
+       <br>
+       <label>Izaberite lek:</label>
+       <!--<table id="tableMeds">
+           <thead>
+           <tr></tr>
+           </thead>
+           <tbody>
+
+           </tbody>
+       </table>-->
+       <select name="alternativeDropDown" id="idAlternativeDropDown">
+           <option> </option>
+       </select>
+       <tr><button id='btnCancleAlternative'>Odustani od preporucivanja leka</button></tr>
+   </div>
+
+
+    <div class="howToScheduleAppointment">
+        <button id='btnSelectExistingAppointment'>Izaberi unapred definisani termin</button>
+        <button id='btnCreateAppointment'>Izaberi datum i vreme novog termina</button>
+        <button id='btnCancleScheduling'>Odustani od zakazivanja</button>
+    </div>
+
+   <div class="existingAppointments">
+       <h3>Izlistani su svi slobodni termini dermatologa i termini u kojima pacijent nema zakazane preglede.</h3>
+           <table id="tableExistingAppointments">
+               <thead>
+               <tr>
+                   <th>Pocetak termina</th>
+                   <th>Kraj termina</th>
+                   <th>Cena</th>
+               </tr>
+               </thead>
+               <tbody>
+
+               </tbody>
+           </table>
+       <button id='btnCancleSchedulingFreeAppointments'>Odustani od zakazivanja</button>
+   </div>
+
+    <div class="createAppointment">
+        <h4>Izvrsice se provera da li su dermatolog i pacijent u ovom periodu slobodni.</h4>
+        
+        <h2>Pocetak pregleda: </h2>
+        <input type="datetime-local" id="chStartOfAppointment">
+        <br>
+        <h2>Kraj pregleda: </h2>
+        <input type="datetime-local" id="chEndOfAppointment">
+
+        <br>
+        <!--<h2>Cena: </h2><input id="chPrice" type="text"/>-->
+
+        <button id="btnCreateAppointmentNow">Zakazi</button>
+        <button id='btnCancleCreatingAppointments'>Odustani od zakazivanja</button>
+
+    </div>
+
+
+</body>
+</html>

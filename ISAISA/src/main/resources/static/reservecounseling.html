@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> rezervisi savetovanje</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/reservecounseling.js"></script>
+</head>
+<body>
+<div>
+    <h2> unesi datum rezervacije</h2>
+    <input type="datetime-local" id="beginofappointment"/>
+    <input type="submit" id="btnSearchbyDate"/>
+
+    <div class="freepharmacy" hidden>
+        <table id="tablePharmacy">
+            <h1>Izaberi apoteku iz koje zelis da izaberes farmaceuta</h1>
+            <tr>
+                <th>id</th>
+                <th>ime apoteke</th>
+                <th>adresa</th>
+                <th>ocena</th>
+            </tr>
+        </table>
+        <h1> sortiraj po oceni</h1>
+        <input type="submit"  id="btnSortbyocena" />
+    </div>
+    <div class="freepharmacist" hidden>
+        <table id="tablePharmacist">
+            <h1>Izaberi farmaceuta</h1>
+            <tr>
+                <th>id</th>
+                <th>ime</th>
+                <th>prezime</th>
+                <th>ocena</th>
+            </tr>
+        </table>
+        <h1> sortiraj farmaceute po oceni</h1>
+        <input type="submit"  id="btnSortbyocenapharmacist" />
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Apoteke</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/medications.js"></script>
+</head>
+<body>
+<div class="veliki">
+
+
+
+<div id="medications">
+    <h1>Svi Lekovi</h1>
+    <br><br>
+
+    <label>Filtriraj po tipu leka:</label>
+    <select name="dropDown" id="idDropDown">
+        <option> </option>
+    </select>
+
+    <button class="filter">Filter</button>
+
+    <div class="container">
+        <table id="medication">
+            <thead>
+            <tr>
+                <th>Naziv leka</th>
+                <th>Tip leka</th>
+                <th>Ocena</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div id="onemedication" hidden>
+    <div class="card">
+        <h1 id="code"></h1>
+        <h1 id="name"></h1>
+        <h1 id="type_med"></h1>
+        <h1 id="shape_med"></h1>
+        <h1 id="ingredients"></h1>
+        <h1 id="producer"></h1>
+        <h1 id="prescription"></h1>
+        <h1 id="notes"></h1>
+    </div>
+</div>
+
+<div class="medicationssearch">
+
+    <input type="search" id="searchMedication" name="q" placeholder="Unesite naziv leka"/>
+
+    <input type="submit" id="btnSearchMedication"/>
+
+    <div class="medicationsShowMeds">
+        <h1>Lek</h1>
+        <table id="tableMedicationsSearch">
+           <thead>
+            <tr>
+                <th>Naziv leka</th>
+                <th>Tip leka</th>
+                <th>Ocena</th>
+            </tr>
+           </thead>
+        </table>
+    </div>
+</div>
+</div>
+
+<div class="mali" hidden>
+
+    <table id="tablePharmacies">
+        <thead>
+        <h1>Apoteke</h1>
+        <tr>
+            <th>Naziv apoteke</th>
+            <th>Cena leka</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+<div class="specification" hidden>
+
+    <table id="tableMedSpec">
+        <thead>
+        <h1>Specifikacija leka</h1>
+        <tr>
+            <th>Naziv leka</th>
+            <th>Tip leka</th>
+            <th>Oblik leka</th>
+            <th>Sastav leka</th>
+            <th>Proizvodjac</th>
+            <th>Kontraindikacije</th>
+            <th>Preporuceni dnevni unos</th>
+
+
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>

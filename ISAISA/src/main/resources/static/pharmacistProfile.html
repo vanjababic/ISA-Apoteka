@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Profil Farmaceuta</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pharmacistProfile.js"></script>
+</head>
+<body>
+<div class="profilePharmacist">
+    <p>
+    <h3>Ime:</h3>
+    <h2 id="firstName" style="color:lightskyblue;"></h2>
+    </p>
+    <p>
+    <h3>Prezime:</h3>
+    <h2 id="lastName" style="color:lightskyblue;"></h2>
+    </p>
+    <p>
+    <h3>Email:</h3>
+    <h2 id="email" style="color:lightskyblue;"></h2>
+    </p>
+    <h3>Adresa:</h3>
+    <h2 id="address" style="color:lightskyblue;"></h2>
+    </p>
+    </p>
+    <h3>Telefon:</h3>
+    <h2 id="phone" style="color:lightskyblue;"></h2>
+    </p>
+    </p>
+    <h3>Grad:</h3>
+    <h2 id="city" style="color:lightskyblue;"></h2>
+    </p>
+    </p>
+    <h3>Drzava:</h3>
+    <h2 id="country" style="color:lightskyblue;"></h2>
+    </p>
+
+    <button id="btnChangeProfilePharmacist">Izmeni profil</button>
+    <button id="btnChangePasswordPharmacist">Promeni lozinku</button>
+</div>
+
+<div class="changeProfilePharmacist">
+    <div>
+        <h1>Ime: </h1><input id="chFirstName" type="text"/>
+        <h1>Prezime: </h1><input id="chLastName" type="text"/>
+        <h2>Email: </h2><input id="chEmail" type="text"/>
+        <h2>Adresa: </h2><input id="chAddress" type="text"/>
+        <h2>Telefon: </h2><input id="chPhone" type="text"/>
+        <h2>Grad: </h2><input id="chCity" type="text"/>
+        <h2>Drzava: </h2><input id="chCountry" type="text"/>
+        <h2 id="chPharmacy"></h2>
+    </div>
+
+    <button id="btnSaveProfilePharmacist">Sacuvaj izmene</button>
+    <button id="btnCancelChanges">Vrati se na profil</button>
+</div>
+
+<div class="changePasswordPharmacist">
+    <div>
+        <h2>Trenutna lozinka: </h2><input id="oldPassword" type="text"/>
+        <h2>Nova lozinka: </h2><input id="chPassword" type="text"/>
+        <h2>Potvrdite novu lozinku: </h2><input id="repeatPassword" type="text"/>
+    </div>
+
+    <button id="btnSavePasswordPharmacist">Sacuvaj izmene</button>
+    <button id="btnCancelPassword">Vrati se na profil</button>
+</div>
+
+<div class="passwordChangeSuccess">
+    <h2>Lozinka uspesno promenjena!</h2>
+    <button><a href="login.html">Ok</a></button>
+</div>
+
+<div class="passwordChangeError">
+    <h2>Lozinka nije uspesno promenjena!</h2>
+    <button><a href="pharmacistProfile.html">Vrati se nazad</a></button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/offer.js"></script>
+</head>
+<body>
+
+
+<h1>Narudzbenice</h1>
+
+<div class="orderall">
+
+    <form>
+        <label>Filtriraj po statusu:</label>
+        <select name="status" id="selection">
+            <option value="ceka_na_odgovor">ceka_na_odgovor</option>
+            <option value="odobrena">odobrena</option>
+            <option value="odbijena">odbijena</option>
+        </select>
+        <br><br>
+        <button name="data" type="button" class="btnFilter">Filter</button>
+    </form>
+
+
+    <div class="container">
+        <table id="orders">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Email Admina Apoteke</th>
+                <th>Naziv Apoteke</th>
+                <th>Adresa Apoteke</th>
+                <th>Rok davanja ponude</th>
+                <th>Status narudzbenice</th>
+                <th>Ponuda</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+</div>
+
+
+
+<div class="orderForm" hidden>
+
+    <form id="addOrderForm">
+        <div class="input-container">
+            <input id="offer"  type="text" />
+            <label>Ponuda</label>
+        </div>
+
+        <div class="input-container">
+            <input type="date" id="date">
+            <label>Datum isporuke</label>
+        </div>
+
+        <div class="input-container">
+            <input type="submit" value="Submit" />
+        </div>
+
+    </form>
+</div>
+
+<div class="orderChangeForm" hidden>
+
+    <form id="addOrderChangeForm">
+        <div class="input-container">
+            <input id="offer1"  type="text" />
+            <label>Ponuda</label>
+        </div>
+
+        <div class="input-container">
+            <input type="date" id="date1">
+            <label>Datum isporuke</label>
+        </div>
+
+        <div class="input-container">
+            <input type="submit" value="Submit" />
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>

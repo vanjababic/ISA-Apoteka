@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cenovnik</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/adminPharmacyPrices.js"></script>
+</head>
+<body>
+    <div class="pharmacistsShowAdminPharmacy">
+        <table id="tablePharmacistsAdminPharmacy">
+            <h1>Savetovanja</h1>
+            <tr>
+                <th>Sifra farmaceuta</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Datum i vreme pocetka savetovanja</th>
+                <th>Datum i vreme kraja savetovanja</th>
+                <th>Cena</th>
+            </tr>
+        </table>
+    </div>
+    <div class="dermatologistsShowAdminPharmacy">
+        <table id="tableDermatologistsAdminPharmacy">
+            <h1>Pregledi</h1>
+            <tr>
+                <th>Sifra dermatologa</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Datum i vreme pocetka pregleda</th>
+                <th>Datum i vreme kraja pregleda</th>
+                <th>Cena</th>
+            </tr>
+        </table>
+    </div>
+    <div class="medicationShowAdminPharmacy">
+        <table id="tableMedicationAdminPharmacy">
+            <h1>Lekovi</h1>
+            <tr>
+                <th>Sifra leka</th>
+                <th>Naziv leka</th>
+                <th>Pocetak vazenja cene</th>
+                <th>Kraj vazenja cene</th>
+                <th>Cena</th>
+            </tr>
+        </table>
+    </div>
+    <div class="changePrice">
+        <label for="changePrice">Nova cena</label>
+        <input type="number" id="changePrice" min="1">
+        <button id="btnSubmitPrice">Ok</button>
+    </div>
+
+    <div class="changePriceMed">
+        <label for="changePriceMed">Nova cena</label>
+        <input type="number" id="changePriceMed" min="1"/>
+        <label for="dateEndPrice">Datum zavrsetka perioda trajanja cene</label>
+        <input type="date" id="dateEndPrice"/>
+        <button id="btnSubmitPriceMed">Ok</button>
+    </div>
+</body>
+</html>
